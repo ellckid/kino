@@ -1,0 +1,181 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/584186e878.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_title">
+            <a asp-action="tickets" class="nav_logo">Кино</a>
+            <div class="nav_search">
+                <input class="nav_search_input" placeholder="Поиск" type="search">
+                <a href="#" class="nav_search_btn">
+                    <img class="nav_lupa" src="/css/imgs/lupa.png">
+                </a>
+            </div>
+            <a href="#" class="nav_bilet_link">Мои билеты</a>
+
+
+
+        </div>
+
+        <div class="nav_video">
+            <video autoplay="" loop="" muted="" class="nav_video">
+                <source src="/css/videos/Colorful Gradient Blur Video Background (online-video-cutter.com).mp4"/>
+            </video>
+        </div>
+    </div>
+
+    <div class="mini_section">
+
+    </div>
+
+    <div class="main_grid_section">
+
+        <div class='main_grid'>
+            @*<div class='big_container box1'><form method='post' asp-page='Index'><a href='#' class='box_link' ><span class='box_title_type_b'>@Model.Afisha_genre</span><div class='box_title_b'><h2 class='box_title_big'> @Model.Afisha_name </h2><p class='box_title_description'>@Model.Afisha_description</p></div></a></form><video class='videos' autoplay='' loop='' muted=''><source src='@Model.Afisha_img'></video></div>*@  
+
+            @Html.Raw(@Model.Afisha_box.Trim('"'))
+
+            @*<div class="small_container box2">
+                <a href="#" class="box_link">
+                    <span class="box_title_type_s">приключение</span>
+                    <div class="box_title_s">
+                        <h2 class="box_title_big">Властелин Колец: Возвращение короля</h2>
+                    </div>
+                </a>
+                <img  url="@Model.Afisha_img" class="imgs">
+            </div>*@
+            @*<div class="small_container box3">
+                <a href="#" class="box_link">
+                    <span class="box_title_type_s">драма</span>
+                    <div class="box_title_s">
+                        <h2 class="box_title_big">Танцующая в темноте</h2>
+                    </div>
+                </a>
+                <img src="https://img.rl0.ru/afisha/e310x310p636x0f1070x1070q85i/s3.afisha.ru/mediastorage/f9/5c/1376ce69f26c43f7a4d954105cf9.jpg" class="imgs">
+            </div>
+            <div class="big_container box4">
+                <a href="#" class="box_link">
+                    <span class="box_title_type_b">боевик</span>
+                    <div class="box_title_b">
+                        <h2 class="box_title_big">Мортал Комбат</h2>
+                        <p class="box_title_description">
+                            Джеймс Ван перезапускает культовую франшизу
+                            легендарного файтинга
+                        </p>
+                    </div>
+                </a>
+                <video class="videos" autoplay="" loop="" muted="" class="video">
+                    <source src="https://s5.afisha.ru/mediastorage/51/57/298d35d26f9a42d5992308b55751.mp4">
+                </video>
+            </div>*@
+
+        </div>
+    </div>
+
+    <!-- <div class="nav">
+        <div class="nav_inner">
+            <div class="nav_title">
+                <a href="index.html" class="nav_link">
+                    <h2 class="nav_logo">Кино</h2>
+                </a>
+                <a class="empty_space"> </a> -->
+    <!-- <form class="nav_form" action="">
+                    <input class="nav_search_input" placeholder="Поиск" type="search">
+                    <a class="nav_search_btn" href=#>
+                        <img class="nav_search_logo" src="css/imgs/lupa.png" alt="">
+                    </a>
+                </form> -->
+    <!-- <a href="/tickets.html" class="nav_link">
+                    <h2 class="nav_word">Мои билеты</h2>
+                </a>
+            </div>
+
+        </div>
+    </div> -->
+    <!-- властелин колец -->
+    <!-- <div class="small_media">
+        <div class="media_inner">
+            <img class="imgs" src="css/imgs/1de218c19abd4a2e85959037a49f.jpg">
+            <a class="media_title_link">
+                <span class="media_title_badge">приключение</span>
+                <div class="media_title">
+                    <h2 class="small_media_title_big">Властелин Колец: Возвращение короля</h2>
+                    <p class="small_media_title_description">Заключительная часть трилогии </p>
+                </div>
+            </a>
+        </div>
+    </div> -->
+    <!-- <div class="small_media right">
+        <div class="media_inner">
+            <img class="imgs" src="css/imgs/a7ee9c4fd8284587938ac43c3ee1.jpeg">
+            <a class="media_title_link">
+                <span class="media_title_badge">драма
+                </span>
+                <div class="media_title">
+                    <h2 class="small_media_title_big">Танцующая в темноте</h2>
+                    <p class="small_media_title_description">Мюзикл Ларса фон Триера</p>
+                </div>
+            </a>
+        </div>
+    </div> -->
+    <!-- большие -->
+    <!-- <div class="big_media">
+        <div class="media_inner">
+            <video autoplay="" loop="" muted="" class="video">
+                <source src="https://s5.afisha.ru/mediastorage/92/38/3dd0afaaffdd4765bb08a7043892.mp4">
+            </video>
+            <a class="media_title_link">
+                <span class="media_title_badge">боевик
+                </span>
+                <div class="media_title">
+                    <h2 class="big_media_title_big">Гнев человеческий</h2>
+                    <p class="big_media_title_description">Воссоединение Гая Ричи и Джейсона Стэтема в
+                        триллере
+                        про инкассаторов</p>
+                </div>
+            </a>
+        </div>
+    </div> -->
+    <!-- <div class="big_media right">
+        <div class="media_inner">
+            <video autoplay="" loop="" muted="" class="video">
+                <source src="https://s5.afisha.ru/mediastorage/51/57/298d35d26f9a42d5992308b55751.mp4">
+            </video>
+            <a class="media_title_link">
+                <span class="media_title_badge">боевик
+                </span>
+                <div class="media_title">
+                    <h2 class="big_media_title_big">Мортал Комбат</h2>
+                    <p class="big_media_title_description">Джеймс Ван перезапускает культовую франшизу
+                        легендарного файтинга</p>
+                </div>
+            </a>
+        </div>
+    </div> -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

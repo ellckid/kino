@@ -1,0 +1,289 @@
+﻿body {
+    background-color: rgb(8, 8, 8);
+}
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover{
+    color:#fff;
+    text-decoration:none;
+}
+
+.nav {
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    height: 100px;
+    max-width: 1010px;
+    min-width: 370px;
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.nav_title {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 320px;
+    z-index: 4;
+    position: absolute;
+    align-items: center;
+}
+
+.nav_logo {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: bolder;
+    color: ivory;
+}
+
+.nav_search {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 40px;
+    background-color: #fff;
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 31px;
+    max-width: 300px;
+}
+
+.nav_search_input {
+    border: none;
+    outline: none;
+}
+
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.nav_bilet_link {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.nav_lupa {
+    max-width: 37px;
+    max-height: 33px;
+    z-index: 5;
+}
+
+.nav_video {
+    height: 100%;
+    width: auto;
+}
+
+.mini_section {
+    height: 170px;
+}
+
+.main_grid_section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20px;
+    right: 20px;
+}
+
+.main_grid {
+    margin-left: auto;
+    margin-right: auto;
+    left: 20px;
+    right: 20px;
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 320px;
+    grid-auto-rows: 320px;
+    grid-column-gap: 50px;
+    grid-row-gap: 35px;
+}
+
+.big_container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    height: 100%;
+    max-width: 640px;
+    /* background-color: rgb(113, 156, 149); */
+}
+
+.small_container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    max-height: 100%;
+    max-width: 320px;
+    /* background-color: rgb(231, 93, 93); */
+}
+
+.imgs {
+    width: 320px;
+    height: 320px;
+    transform:scale(1.1);
+
+}
+
+.imgs2 {
+    width: 320px;
+    height: 320px;
+    background-image: url(/css/imgs/a7ee9c4fd8284587938ac43c3ee1.jpeg);
+    background-size: cover;
+}
+
+.videos {
+    max-width: 640px;
+    height: 100%;
+}
+
+.box1 {
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+
+.box2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+}
+
+.box3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.box4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
+}
+
+.box5 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.box6 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 3;
+    
+}
+
+.box7 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.box8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 4;
+}
+
+.box_link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 170px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 2;
+}
+
+    .box_link:hover {
+        color: rgb(255, 255, 255);
+    }
+
+.box_title_type_b {
+    max-width: 600px;
+}
+
+.box_title_type_s {
+    max-width: 300px;
+}
+
+.box_title_b {
+    max-width: 600px;
+}
+
+.box_title_s {
+    max-width: 300px;
+}
+
+/*  стили зала */
+
+.zal_grid_section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20px;
+    right: 20px;
+}
+
+.zal_grid {
+    margin-left: auto;
+    margin-right: auto;
+    left: 20px;
+    right: 20px;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-auto-rows: 100px;
+    grid-row-gap: 35px;
+}
+
+.zal_film_name {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.zal_info {
+    width: 100%;
+    background-color: rgb(192, 128, 128);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.zal_info_number {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.zal_info_time {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+}
